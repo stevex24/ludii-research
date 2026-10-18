@@ -1,0 +1,39 @@
+KRK maximal-DTM optimal line
+Start FEN: 8/8/8/8/8/8/1Rk5/K7 b - - 0 1
+DTM (plies): 32
+
+ 1. Kc3      c2c3   DTM 32 -> 31
+ 2. Ka2      a1a2   DTM 31 -> 30
+ 3. Kd4      c3d4   DTM 30 -> 29
+ 4. Kb3      a2b3   DTM 29 -> 28
+ 5. Kd3      d4d3   DTM 28 -> 27
+ 6. Ra2      b2a2   DTM 27 -> 26
+ 7. Kd4      d3d4   DTM 26 -> 25
+ 8. Ra5      a2a5   DTM 25 -> 24
+ 9. Kd3      d4d3   DTM 24 -> 23
+10. Ra4      a5a4   DTM 23 -> 22
+11. Kd2      d3d2   DTM 22 -> 21
+12. Rd4+     a4d4   DTM 21 -> 20
+13. Ke2      d2e2   DTM 20 -> 19
+14. Kc2      b3c2   DTM 19 -> 18
+15. Ke3      e2e3   DTM 18 -> 17
+16. Kc3      c2c3   DTM 17 -> 16
+17. Ke2      e3e2   DTM 16 -> 15
+18. Rd3      d4d3   DTM 15 -> 14
+19. Ke1      e2e1   DTM 14 -> 13
+20. Rd2      d3d2   DTM 13 -> 12
+21. Kf1      e1f1   DTM 12 -> 11
+22. Kc2      c3c2   DTM 11 -> 10
+23. Ke1      f1e1   DTM 10 -> 9
+24. Kd3      c2d3   DTM 9 -> 8
+25. Kf1      e1f1   DTM 8 -> 7
+26. Ke3      d3e3   DTM 7 -> 6
+27. Ke1      f1e1   DTM 6 -> 5
+28. Rd4      d2d4   DTM 5 -> 4
+29. Kf1      e1f1   DTM 4 -> 3
+30. Rg4      d4g4   DTM 3 -> 2
+31. Ke1      f1e1   DTM 2 -> 1
+32. Rg1#     g4g1   DTM 1 -> 0
+
+Final FEN: 8/8/8/8/8/4K3/8/4k1R1 b - - 32 17
+PASS: legal optimal line ends in checkmate

@@ -1,0 +1,8 @@
+KRK retrograde analysis; no 50-move or repetition rules
+Legal states: 399112
+Winning: 175168
+Losing: 201700
+Drawn: 22244
+Max DTM plies: 32
+Checkmates: 216
+Stalemates: 68
