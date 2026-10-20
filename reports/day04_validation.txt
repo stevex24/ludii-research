@@ -1,0 +1,10 @@
+Independent 3x3 NoGo validation
+Reference method: tuple board, graph flood fill, independent recursive minimax
+Reference initial outcome: BLACK WINS
+Reference initial DTM: 7
+Reference reachable states: 3884
+PASS: identical legal moves and minimax W/L + DTM in 3884 reachable states
+Checked legal transitions: 11165
+Winning first moves: 9 of 9
+PASS: independent reference agrees with Day 4 solver
+Ludii comparison status: rules inspected; Ludii execution NOT independently tested

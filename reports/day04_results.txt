@@ -1,0 +1,45 @@
+3x3 NoGo — exhaustive minimax (no symmetry reduction)
+Root result: BLACK WINS
+Optimal game length (plies): 7
+Cached reachable states: 3884
+Optimal first moves (row,col; 1-based):
+  (1, 1) win plies 7
+  (1, 2) win plies 7
+  (1, 3) win plies 7
+  (2, 1) win plies 7
+  (2, 2) win plies 7
+  (2, 3) win plies 7
+  (3, 1) win plies 7
+  (3, 2) win plies 7
+  (3, 3) win plies 7
+One optimal game:
+Ply 1: Black (1,1)
+B . .
+. . .
+. . .
+Ply 2: White (1,2)
+B W .
+. . .
+. . .
+Ply 3: Black (1,3)
+B W B
+. . .
+. . .
+Ply 4: White (2,2)
+B W B
+. W .
+. . .
+Ply 5: Black (2,1)
+B W B
+B W .
+. . .
+Ply 6: White (3,2)
+B W B
+B W .
+. W .
+Ply 7: Black (2,3)
+B W B
+B W B
+. W .
+Player unable to move: White
+Winner: Black
