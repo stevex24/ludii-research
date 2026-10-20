@@ -1,0 +1,13 @@
+{
+  "game": "standard 4x4 NoGo",
+  "time_limit_seconds": 60.0,
+  "state_limit": 300000,
+  "status": "INCOMPLETE",
+  "winner": null,
+  "optimal_plies": null,
+  "first_move": null,
+  "elapsed_seconds": 4.57,
+  "expanded_states": 300032,
+  "cached_states": 300020,
+  "legal_edges_considered": 1210771
+}
