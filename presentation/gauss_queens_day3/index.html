@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gauss and the Eight Queens — Day 3 — 30-second performance</title><style>
+:root{font-family:system-ui,-apple-system,sans-serif;color:#eee;background:#14202c}body{margin:0;padding:24px}main{max-width:1050px;margin:auto}h1{margin:0 0 8px}p{color:#c7d3df} .layout{display:grid;grid-template-columns:minmax(320px,640px) 1fr;gap:25px;align-items:start}.board{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));grid-template-rows:repeat(8,minmax(0,1fr));width:100%;aspect-ratio:1;box-sizing:border-box;outline:3px solid #a6b6c3;border-radius:3px;overflow:hidden}.sq{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;aspect-ratio:1;font-size:clamp(26px,5vw,58px);min-width:0;min-height:0}.light{background:#e6d6b6;color:#172633}.dark{background:#7893a2;color:#172633}.sq.current{box-shadow:inset 0 0 0 5px #ffcc4a}.sq.conflict{background:#db7474!important}.sq.backtrack{background:#f4a66d!important}.queen{display:block;flex:none;font-family:Georgia,serif;line-height:1;filter:drop-shadow(1px 2px 1px #ffffff66)}.coord{position:absolute;bottom:3px;right:5px;font:11px system-ui;opacity:.65}.panel{background:#243443;border:1px solid #516579;padding:18px;border-radius:10px}button{background:#d9e7ef;color:#12212b;border:0;border-radius:6px;padding:10px 14px;font-weight:650;cursor:pointer;margin:4px 5px 4px 0}button:hover{background:#fff}button:disabled{opacity:.4;cursor:default}input{width:100%}.stat{margin:12px 0;font-size:1.04rem}.status{min-height:64px;font-size:1.12rem;line-height:1.5}.muted{color:#b8c9d5}.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:.9rem}.dot{display:inline-block;width:12px;height:12px;margin-right:4px;border-radius:2px}.stage{display:flex;align-items:stretch;gap:10px}.board-wrap{position:relative;flex:1;min-width:0}.actor{width:145px;flex:none;align-self:stretch;position:relative;display:flex;align-items:flex-end;justify-content:center}.actor svg{width:100%;height:auto;max-height:360px;overflow:visible}.portrait-head{position:absolute;width:98px;height:125px;left:29px;bottom:181px;object-fit:fill;pointer-events:none;z-index:2;filter:drop-shadow(0 1px 2px #10151a)}.speech{position:absolute;top:2%;left:0;right:0;text-align:center;background:#fff8e7;color:#26313b;border-radius:12px;padding:7px 4px;font-size:13px;font-weight:700;min-height:18px}.arm{display:none}.actor.thinking .brow{transform:translateY(-3px)}.actor.happy .mouth{d:path("M 61 109 Q 73 125 86 109")}.carry-queen{position:absolute;z-index:12;pointer-events:none;font-family:Georgia,serif;color:#172633;font-size:clamp(26px,5vw,58px);line-height:1;transform:translate(-50%,-50%);filter:drop-shadow(1px 2px 1px #fff8)}.reach-line{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:9}.hand-marker{position:absolute;left:0;top:0;pointer-events:none;font-size:29px;line-height:1;z-index:5;transform:translate(-50%,-50%);transition:left .23s ease,top .23s ease;filter:drop-shadow(1px 1px 2px #222)}.foot{font-size:.88rem;margin-top:18px}@media(max-width:780px){.layout{grid-template-columns:1fr}.actor{width:100px}.speech{font-size:11px}.sq{font-size:clamp(24px,8vw,55px)}}
+</style></head><body><main><h1>Gauss and the Eight Queens</h1><p>Day 3 performance — Gauss solves eight queens in 30 seconds, accelerating as he searches.</p><div class="layout"><div><div class="stage"><div class="board-wrap"><div class="board" id="board" role="img" aria-label="Eight by eight chessboard showing queen search"></div><span class="hand-marker" id="hand" aria-hidden="true" hidden>✋</span><span class="carry-queen" id="carry" hidden>♛</span></div><div class="actor thinking" id="actor" aria-label="Cartoon Carl Friedrich Gauss"><div class="speech" id="speech">Hmm…</div><img class="portrait-head" src="gauss_portrait.png" alt="Gauss portrait with distinctive dark cap"/><svg id="gaussPortrait" viewBox="0 0 145 330" role="img" aria-label="Simple historical cartoon of Gauss, wearing a dark nineteenth-century cap, with silver side hair, long nose, cravat and frock coat">
+<ellipse cx="76" cy="322" rx="43" ry="6" fill="#0b1420" opacity=".4"/>
+<!-- spare, stick-figure-like legs and boots -->
+<path d="M58 270 L51 314 L39 318 M91 270 L100 314 L114 318" stroke="#27313b" stroke-width="9" stroke-linecap="round" fill="none"/>
+<!-- narrow frock coat, tail, lapels, waistcoat -->
+<path d="M53 160 L41 207 L32 287 L61 278 L75 230 L91 278 L120 287 L107 204 L95 160 Z" fill="#273c55" stroke="#152638" stroke-width="2.5"/>
+<path d="M59 162 L75 241 L91 162 L84 158 L75 179 L66 158Z" fill="#f2eadf"/>
+<path d="M73 180 L78 181 L82 220 L76 235 L71 218Z" fill="#a35c50"/>
+<path d="M54 166 L69 191 L57 205 L75 239 M96 166 L81 191 L92 205 L75 239" fill="none" stroke="#7890a1" stroke-width="2.5"/>
+<!-- far arm, simple and unobtrusive -->
+<path d="M53 175 Q38 210 45 239" stroke="#273c55" stroke-width="10" fill="none" stroke-linecap="round"/>
+<circle cx="45" cy="240" r="6" fill="#dfb391"/>
+<!-- neck and high white collar -->
+<path d="M65 140 L64 164 L85 164 L84 140" fill="#e5b895"/>
+<path d="M60 157 L75 176 L89 157" fill="none" stroke="#f9f3e8" stroke-width="8"/>
+<!-- recognizable high forehead, pronounced nose and narrow chin -->
+<path d="M43 80 Q39 52 57 39 Q81 25 101 46 Q113 65 107 101 Q108 131 86 145 Q65 153 49 128 Q42 107 43 80Z" fill="#e7bd9c" stroke="#9b7865" stroke-width="2"/>
+<!-- Gray hair is restricted to the temples and sides, clearly separate from the cap -->
+<path d="M44 70 Q33 78 39 106 Q34 117 47 126 L49 90Z" fill="#bfc3c9" stroke="#78828a" stroke-width="2"/>
+<path d="M104 69 Q116 82 109 106 Q115 119 102 126 L100 89Z" fill="#bfc3c9" stroke="#78828a" stroke-width="2"/>
+<path d="M38 87 Q29 94 40 104 M108 87 Q119 94 108 105" fill="none" stroke="#e1e3e5" stroke-width="3"/>
+<!-- Distinctive dark scholar's cap: separate crown, brim, and band, not a gray hair helmet -->
+<path d="M36 65 Q31 34 52 27 Q78 13 102 30 Q119 43 111 66 L104 70 Q75 56 43 72Z" fill="#252d37" stroke="#111922" stroke-width="2.5"/>
+<path d="M38 58 Q74 45 109 59 L108 73 Q75 63 41 77Z" fill="#3b4652" stroke="#111922" stroke-width="2"/>
+<path d="M34 72 Q75 60 115 70 Q111 81 75 79 Q44 83 34 72Z" fill="#1d2732" stroke="#0f161f" stroke-width="2"/>
+<path d="M52 34 Q76 24 99 38" fill="none" stroke="#67707a" stroke-width="2" opacity=".7"/>
+<!-- strong brows, eyes, elongated nose, slight smile -->
+<path class="brow" d="M50 90 L65 87 M83 88 L99 90" stroke="#64646a" stroke-width="3" fill="none"/>
+<circle cx="58" cy="96" r="2.5" fill="#27313b"/><circle cx="92" cy="96" r="2.5" fill="#27313b"/>
+<path d="M77 94 L72 115 Q76 120 84 116" stroke="#a67e66" stroke-width="2.5" fill="none"/>
+<path class="mouth" d="M64 129 Q77 134 88 127" stroke="#835e53" stroke-width="2" fill="none"/>
+<!-- near shoulder anchor: on the board-facing side of Gauss -->
+<circle id="shoulderAnchor" cx="53" cy="174" r="1" fill="none"/>
+</svg></div></div><p class="legend"><span><i class="dot" style="background:#ffcc4a"></i>Candidate</span><span><i class="dot" style="background:#db7474"></i>Attacked</span><span><i class="dot" style="background:#f4a66d"></i>Backtrack</span></p></div><div class="panel"><div class="status" id="status" aria-live="polite"></div><div class="stat">Queens placed: <b id="placed">0</b> / 8</div><div class="stat">Candidates tested: <b id="tested">0</b></div><div class="stat">Backtracks: <b id="backtracks">0</b></div><div class="stat">Step: <b id="step">0</b> / <span id="total">0</span></div><div class="stat">Performance clock: <b id="clock">0.0</b> / 30.0 seconds</div><div><button id="show30">▶ 30-second show</button><button id="play">▶ Play</button><button id="next">Next step</button><button id="reset">↺ Reset</button></div><label for="speed">Playback speed: <b id="speedLabel">1×</b></label><input type="range" id="speed" min="1" max="100" value="1" step="1"><p class="muted">The 30-second show automatically accelerates and ends with a five-second solution tableau. Play and Next step remain available for inspection.</p></div></div><p class="foot">Historical note: Gauss studied the eight queens problem; this is a modern backtracking reconstruction, not a claim about his exact historical method.</p></main><script>
+'use strict';
+const events=[];const queens=Array(8).fill(-1);let tested=0,backtracks=0;
+function record(type,row,col,message){events.push({type,row,col,queens:[...queens],tested,backtracks,message});}
+record('start',-1,-1,'Place eight queens so that none attack another.');
+function safe(row,col){for(let r=0;r<row;r++){let c=queens[r];if(c===col||Math.abs(c-col)===row-r)return false;}return true;}
+function solve(row){if(row===8){record('solved',-1,-1,'Success! All eight queens are mutually nonattacking.');return true;}for(let col=0;col<8;col++){tested++;if(!safe(row,col)){record('conflict',row,col,`Row ${row+1}, column ${col+1}: attacked — try the next square.`);continue;}queens[row]=col;record('place',row,col,`Place queen ${row+1} at row ${row+1}, column ${col+1}.`);if(solve(row+1))return true;queens[row]=-1;backtracks++;record('backtrack',row,col,`No continuation works. Remove queen from row ${row+1}, column ${col+1}.`);}return false;}
+solve(0);
+const actor=document.getElementById('actor'),speech=document.getElementById('speech'),hand=document.getElementById('hand');const board=document.getElementById('board'),status=document.getElementById('status');const squares=[];
+for(let r=0;r<8;r++)for(let c=0;c<8;c++){let s=document.createElement('div');s.className='sq '+((r+c)%2?'dark':'light');let q=document.createElement('span');q.className='queen';s.append(q);if(r===7||c===0){let co=document.createElement('span');co.className='coord';co.textContent=(r===7?'abcdefgh'[c]:'')+(c===0?8-r:'');s.append(co);}board.append(s);squares.push({s,q});}
+let index=0,playing=false,token=0,showMode=false,showStart=0,showElapsed=0,showRaf=0;const speed=document.getElementById('speed');
+const carry=document.getElementById('carry');
+const stage=document.querySelector('.stage'),wrap=document.querySelector('.board-wrap');
+const reach=document.createElementNS('http://www.w3.org/2000/svg','svg');reach.setAttribute('class','reach-line');stage.style.position='relative';stage.append(reach);
+const reachPath=document.createElementNS('http://www.w3.org/2000/svg','path');reachPath.setAttribute('fill','none');reachPath.setAttribute('stroke','#263c55');reachPath.setAttribute('stroke-width','17');reachPath.setAttribute('stroke-linecap','round');reach.append(reachPath);
+const reachHand=document.createElementNS('http://www.w3.org/2000/svg','circle');reachHand.setAttribute('r','10');reachHand.setAttribute('fill','#e9b895');reach.append(reachHand);
+hand.hidden=true; // The animated arm and hand are drawn together, not as a detached cursor.
+function boardPoint(row,col){const b=board.getBoundingClientRect(),st=stage.getBoundingClientRect();return {x:b.left-st.left+(col+.5)*b.width/8,y:b.top-st.top+(row+.5)*b.height/8};}
+function shoulder(){const anchor=document.getElementById('shoulderAnchor');const svg=document.getElementById('gaussPortrait');const pt=svg.createSVGPoint();pt.x=53;pt.y=174;const transformed=pt.matrixTransform(svg.getScreenCTM());const st=stage.getBoundingClientRect();return {x:transformed.x-st.left,y:transformed.y-st.top};}
+function setArm(x,y){const sh=shoulder();reach.setAttribute('viewBox',`0 0 ${stage.clientWidth} ${stage.clientHeight}`);reachPath.setAttribute('d',`M ${sh.x} ${sh.y} Q ${sh.x-42} ${sh.y+20} ${x} ${y}`);reachHand.setAttribute('cx',x);reachHand.setAttribute('cy',y);}
+function hideArm(){reach.style.display='none';carry.hidden=true;}
+function placeCarry(x,y){const st=stage.getBoundingClientRect(),b=board.getBoundingClientRect();carry.style.left=(x+b.left-st.left)+'px';carry.style.top=(y+b.top-st.top)+'px';}
+function showCarryAt(x,y){const st=stage.getBoundingClientRect();const wr=wrap.getBoundingClientRect();carry.style.left=(x+st.left-wr.left)+'px';carry.style.top=(y+st.top-wr.top)+'px';carry.hidden=false;}
+function draw(e,hideTarget=false){for(let r=0;r<8;r++)for(let c=0;c<8;c++){let {s,q}=squares[r*8+c];q.textContent=e.queens[r]===c && !(hideTarget&&e.row===r&&e.col===c)?'♛':'';s.classList.remove('current','conflict','backtrack');if(e.row===r&&e.col===c)s.classList.add(e.type==='conflict'?'conflict':e.type==='backtrack'?'backtrack':'current');}actor.classList.toggle('happy',e.type==='solved');actor.classList.toggle('thinking',e.type==='conflict'||e.type==='start');speech.textContent=({start:'Let us begin!',place:'A promising square!',conflict:'Attacked!',backtrack:'Try another path…',solved:'Eureka!'}[e.type]);status.textContent=e.message;document.getElementById('placed').textContent=e.queens.filter(c=>c>=0).length;document.getElementById('tested').textContent=e.tested;document.getElementById('backtracks').textContent=e.backtracks;document.getElementById('step').textContent=index;document.getElementById('total').textContent=events.length-1;document.getElementById('next').disabled=index===events.length-1;document.getElementById('play').textContent=playing?'❚❚ Pause':'▶ Play';}
+function sleep(ms){return new Promise(resolve=>setTimeout(resolve,ms));}
+async function animateEvent(e,run){const duration=Math.max(80,650/Number(speed.value));if(e.row<0){hideArm();return;}
+ const target=boardPoint(e.row,e.col),sh=shoulder();reach.style.display='block';
+ const pick=e.type==='place'||e.type==='backtrack';
+ const start= e.type==='place'?{x:sh.x-22,y:sh.y+26}:target;
+ const end=e.type==='backtrack'?{x:sh.x-22,y:sh.y+26}:target;
+ const frames=Number(speed.value)>30?1:Math.max(3,Math.min(20,Math.round(duration/25)));
+ if(pick){showCarryAt(start.x,start.y);}else carry.hidden=true;
+ for(let f=0;f<=frames;f++){if(run!==token)return;const t=f/frames, eased=t*t*(3-2*t);const x=start.x+(end.x-start.x)*eased,y=start.y+(end.y-start.y)*eased;setArm(x,y);if(pick)showCarryAt(x,y);if(f<frames)await sleep(duration/frames);}
+ if(run!==token)return;carry.hidden=true;
+}
+function render(){draw(events[index]);hideArm();document.getElementById("show30").textContent=showMode?"❚❚ Pause show":"▶ 30-second show";}
+function stop(){playing=false;showMode=false;cancelAnimationFrame(showRaf);token++;render();}
+async function loop(run){while(playing&&run===token&&index<events.length-1){const next=events[index+1];index++;draw(next,next.type==='place');await animateEvent(next,run);if(run!==token)return;draw(next);if(Number(speed.value)<25)await sleep(Math.max(20,250/Number(speed.value)));}if(run===token){playing=false;render();}}
+document.getElementById('play').onclick=()=>{if(showMode)stop();if(playing){stop();return;}if(index===events.length-1)index=0;playing=true;const run=++token;render();loop(run);};
+document.getElementById('next').onclick=async()=>{stop();if(index<events.length-1){index++;const run=token;const e=events[index];draw(e,e.type==='place');await animateEvent(e,run);if(run===token)draw(e);}};
+document.getElementById('reset').onclick=()=>{stop();index=0;showElapsed=0;document.getElementById('clock').textContent='0.0';render();};speed.oninput=()=>{document.getElementById('speedLabel').textContent=speed.value+'×';};
+// The fixed-duration show is driven by elapsed time, not by setTimeout delays.
+// This guarantees that slow machines do not extend the 30-second performance.
+function showFrame(now){
+ if(!showMode)return;
+ const elapsed=Math.min(30,showElapsed+(now-showStart)/1000);
+ document.getElementById('clock').textContent=elapsed.toFixed(1);
+ let targetIndex;
+ if(elapsed<4){targetIndex=0;}
+ else if(elapsed<25){const progress=(elapsed-4)/21;targetIndex=Math.min(events.length-1,Math.floor(Math.pow(progress,2.25)*(events.length-1)));}
+ else targetIndex=events.length-1;
+ index=targetIndex;const e=events[index];draw(e);
+ if(elapsed<4){hideArm();speech.textContent='Eight queens. One board.';status.textContent='Gauss considers how to place eight mutually nonattacking queens.';}
+ else if(elapsed>=25){hideArm();actor.classList.add('happy');speech.textContent='Eureka!';status.textContent='Eight queens, none attacking another. Backtracking finds a solution!';}
+ else if(e.row>=0){
+  reach.style.display='block';carry.hidden=true;
+  const pt=boardPoint(e.row,e.col);setArm(pt.x,pt.y);
+  // The queen follows the hand during a placement/removal transition.
+  const transition=((elapsed-4)/21*(events.length-1))%1;
+  if((e.type==='place'||e.type==='backtrack')&&transition<0.7){
+   const sh=shoulder(),u=transition/0.7;
+   const x=e.type==='place'?sh.x+(pt.x-sh.x)*u:pt.x+(sh.x-pt.x)*u;
+   const y=e.type==='place'?sh.y+(pt.y-sh.y)*u:pt.y+(sh.y-pt.y)*u;
+   setArm(x,y);showCarryAt(x,y);
+  }
+ }else hideArm();
+ if(elapsed>=30){showMode=false;showElapsed=0;hideArm();render();document.getElementById('clock').textContent='30.0';speech.textContent='Eureka!';return;}
+ showRaf=requestAnimationFrame(showFrame);
+}
+document.getElementById('show30').onclick=()=>{
+ if(showMode){showElapsed=Math.min(30,showElapsed+(performance.now()-showStart)/1000);showMode=false;cancelAnimationFrame(showRaf);document.getElementById('show30').textContent='▶ Resume show';return;}
+ playing=false;token++;showMode=true;
+ if(showElapsed>=30)showElapsed=0;
+ showStart=performance.now();document.getElementById('show30').textContent='❚❚ Pause show';
+ showRaf=requestAnimationFrame(showFrame);
+};render();
+</script></body></html>

@@ -1,0 +1,6 @@
+BEFORE PRESENTING:
+1. Keep the gauss_queens_day3 folder together: index.html and gauss_portrait.png must remain side by side.
+2. Open gauss_queens_day3/index.html in Chrome. Click 30-second show when presenting.
+3. Open archbishop_8x8.html and chancellor_8x8.html in separate tabs before class.
+4. In Chrome use Control+Tab to switch tabs; Command+Tab switches between Chrome and PowerPoint on Mac.
+5. Test all demonstrations locally before class.
