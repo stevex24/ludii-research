@@ -1,0 +1,31 @@
+EMBER ROADS: bounded rules audit; source unchanged: /Users/steve/Downloads/Ember-Roads-exact-distance-repair.lud
+PASS: game compiles
+INITIAL MOVES: total=12, one-square=9, two-square=3 (written rules expect 9 and 3 respectively)
+EMBER TEST: B1 before piece=0, after=0; B2 after=0
+EMBER TEST: CHECK: inspect piece IDs and board state
+TURN TEST: mover after first move=2 (expected 2)
+TURN TEST: next player has 12 legal replies
+TURN TEST: mover after reply=1 (expected 1)
+BLOCKING TEST: P1 legal move onto burned B1=false (expected false)
+SAMPLE 1: 25 plies; terminal=true; last destination=D2
+SAMPLE 2: 31 plies; terminal=true; last destination=D2
+SAMPLE 3: 27 plies; terminal=true; last destination=E4
+SAMPLE 4: 33 plies; terminal=true; last destination=F2
+SAMPLE 5: 33 plies; terminal=true; last destination=E6
+SAMPLE 6: 35 plies; terminal=true; last destination=F2
+SAMPLE 7: 25 plies; terminal=true; last destination=C1
+SAMPLE 8: 32 plies; terminal=true; last destination=A1
+SAMPLE 9: 16 plies; terminal=true; last destination=A1
+SAMPLE 10: 35 plies; terminal=true; last destination=A3
+SAMPLE 11: 27 plies; terminal=true; last destination=F4
+SAMPLE 12: 20 plies; terminal=true; last destination=A1
+SAMPLE 13: 26 plies; terminal=true; last destination=G1
+SAMPLE 14: 26 plies; terminal=true; last destination=F3
+SAMPLE 15: 20 plies; terminal=true; last destination=G5
+SAMPLE 16: 29 plies; terminal=true; last destination=A1
+SAMPLE 17: 30 plies; terminal=true; last destination=F2
+SAMPLE 18: 30 plies; terminal=true; last destination=C1
+SAMPLE 19: 39 plies; terminal=true; last destination=G1
+SAMPLE 20: 31 plies; terminal=true; last destination=G1
+SAMPLE SUMMARY: terminal=20, unfinished=0, terminal-last-on-back-rank=9, other-terminal=11, harness-errors=0
+LIMITS: Random sample only; not an exhaustive solver. Goal/no-move winner correctness requires a separate targeted winner assertion. No game file changes.

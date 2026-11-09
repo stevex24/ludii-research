@@ -1,0 +1,48 @@
+// Ember Roads: a two-player race with permanent trails.
+(game "Ember Roads"
+    (players 2)
+    (equipment {
+        (board (square 7))
+        (piece "Pawn" Each
+            (or
+                (move Slide Orthogonal
+                    (between (exact 1) if:(is Empty (between)))
+                    (to if:(is Empty (to)))
+                    (then (add (piece "Marker0") (to (last From))))
+                )
+                (move Slide Orthogonal
+                    (between (exact 2) if:(is Empty (between)))
+                    (to if:(is Empty (to)))
+                    (then (add (piece "Marker0") (to (last From))))
+                )
+            )
+        )
+        (piece "Marker" Neutral)
+        (regions "Goal" P1 (sites Top))
+        (regions "Goal" P2 (sites Bottom))
+    })
+    (rules
+        (start {
+            (place "Pawn1" {"B1" "D1" "F1"})
+            (place "Pawn2" {"B7" "D7" "F7"})
+        })
+        (play (forEach Piece))
+        (end {
+            (if (is In (last To) (sites Mover "Goal"))
+                (result Mover Win)
+            )
+            (if (no Moves Next) (result Mover Win))
+        })
+    )
+)
+
+(metadata
+    (info {
+        (description "A race across a board that gradually burns behind its runners. Every departure creates a permanent obstacle, turning movement into both progress and defence.")
+        (rules "Two players each start with three runners on a 7 by 7 board. Player 1 starts on B1, D1 and F1; Player 2 on B7, D7 and F7. Player 1 moves first. On each turn, move one runner one or two squares horizontally or vertically in a straight line. The destination and any intervening square must be empty. After moving, place a permanent neutral ember on the square the runner departed. Only the departure square burns; a crossed square does not. Runners cannot capture or jump over runners or embers. Moving backward is allowed. Win immediately by landing any runner on the opposite back rank, or by leaving the opponent with no legal move. Passing is not allowed.")
+    })
+    (graphics {
+        (board Style Chess)
+        (piece Scale "Marker" 0.65)
+    })
+)
