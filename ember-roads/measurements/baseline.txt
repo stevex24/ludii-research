@@ -1,0 +1,10 @@
+game=Ember Roads
+trials=20 seed=20261110
+max_moves_per_trial=1000
+finished=20 capped=0
+mean_moves=27.7
+mean_legal_moves=8.787003610108304
+DecisionMoves=0.9810017081315049
+Completion=1.0
+DurationTurns=27.7
+Balance=0.8
