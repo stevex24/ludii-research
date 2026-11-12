@@ -1,0 +1,10 @@
+game=NoGo
+trials=200 seed=20261111
+max_moves_per_trial=1000
+finished=200 capped=0
+mean_moves=74.395
+mean_legal_moves=41.99684118556355
+DecisionMoves=0.9868108290063882
+Completion=1.0
+DurationTurns=74.395
+Balance=0.97

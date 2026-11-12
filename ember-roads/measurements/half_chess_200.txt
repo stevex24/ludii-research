@@ -1,0 +1,10 @@
+game=Half Chess
+trials=200 seed=20261111
+max_moves_per_trial=1000
+finished=200 capped=0
+mean_moves=224.51
+mean_legal_moves=11.465012694312056
+DecisionMoves=0.9885913814309544
+Completion=0.12
+DurationTurns=224.51
+Balance=0.98

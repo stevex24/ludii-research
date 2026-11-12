@@ -1,0 +1,10 @@
+game=Tic-Tac-Toe
+trials=200 seed=20261111
+max_moves_per_trial=1000
+finished=200 capped=0
+mean_moves=7.875
+mean_legal_moves=5.426031746031746
+DecisionMoves=0.9402020202020195
+Completion=0.85
+DurationTurns=7.875
+Balance=0.78
