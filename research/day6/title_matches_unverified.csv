@@ -1,0 +1,135 @@
+ludii_path,ludii_title,bgg_id,bgg_title,rating,users_rated,year,status
+lud/board/space/blocking/Root.lud,Root,237182,Root,8.10,24412,2018,unverified
+lud/board/race/reach/Santorini.lud,Santorini,194655,Santorini,7.48,27873,2016,unverified
+lud/board/space/territory/Go.lud,Go,188,Go,7.64,14843,-2200,unverified
+lud/board/war/replacement/eliminate/target/Shogun.lud,Shogun,20551,Shogun,7.54,12828,2006,unverified
+lud/board/race/escape/Imperial.lud,Imperial,24181,Imperial,7.61,8246,2006,unverified
+lud/board/war/replacement/checkmate/chess/Chess.lud,Chess,171,Chess,7.13,28745,1475,unverified
+lud/board/space/line/Unfair.lud,Unfair,179172,Unfair,7.35,3613,2017,unverified
+lud/board/space/line/Quarto.lud,Quarto,681,Quarto,6.86,5877,1991,unverified
+lud/board/race/reach/Quoridor.lud,Quoridor,624,Quoridor,6.67,6393,1997,unverified
+lud/board/race/escape/Backgammon.lud,Backgammon,2397,Backgammon,6.54,11680,-3000,unverified
+lud/board/war/replacement/checkmate/shogi/Shogi.lud,Shogi,2065,Shogi,7.37,1544,1587,unverified
+lud/board/war/replacement/checkmate/xiangqi/Xiangqi.lud,Xiangqi,2393,Xiangqi,7.12,1884,762,unverified
+lud/board/space/territory/Lotus.lud,Lotus,198525,Lotus,6.74,2566,2016,unverified
+lud/board/space/territory/Virus.lud,Virus,180020,Virus!,6.76,3160,2015,unverified
+lud/board/space/line/Pente.lud,Pente,1295,Pente,6.64,2741,1977,unverified
+lud/board/space/line/Pentago.lud,Pentago,19841,Pentago,6.38,3104,2005,unverified
+lud/board/hunt/Coyote.lud,Coyote,8172,Coyote,6.61,1362,2003,unverified
+lud/board/war/custodial/Hnefatafl.lud,Hnefatafl,2932,Hnefatafl,6.57,1203,400,unverified
+lud/board/race/reach/Arimaa.lud,Arimaa,4616,Arimaa,7.24,639,2002,unverified
+lud/board/race/reach/Pylos.lud,Pylos,1419,Pylos,6.32,1645,1993,unverified
+lud/board/space/group/Lines of Action.lud,Lines of Action,3406,Lines of Action,7.15,452,1969,unverified
+lud/board/space/connection/Hex.lud,Hex,4112,Hex,6.70,700,1942,unverified
+lud/board/race/reach/Santorini.lud,Santorini,9963,Santorini,7.29,331,2004,unverified
+lud/board/war/replacement/eliminate/target/Let's Catch the Lion.lud,Let's Catch the Lion,56796,Let's Catch the Lion!,6.70,533,2008,unverified
+lud/board/sow/two_rows/Kalah.lud,Kalah,2448,Kalah,5.92,5932,700,unverified
+lud/board/space/blocking/Amazons.lud,Amazons,2125,Amazons,7.16,295,1992,unverified
+lud/board/space/connection/Trax.lud,Trax,748,Trax,6.49,533,1980,unverified
+lud/board/space/connection/ConHex.lud,ConHex,10989,ConHex,6.82,313,2002,unverified
+lud/board/space/line/Gobblet Gobblers.lud,Gobblet Gobblers,13230,Gobblet Gobblers,6.25,707,2003,unverified
+lud/board/space/line/Quixo.lud,Quixo,3190,Quixo,6.14,769,1995,unverified
+lud/puzzle/planning/Chase.lud,Chase,316,Chase,6.81,302,1985,unverified
+lud/board/space/line/Yavalath.lud,Yavalath,33767,Yavalath,7.13,230,2007,unverified
+lud/board/sow/two_rows/Oware.lud,Oware,28302,Oware,6.46,352,550,unverified
+lud/board/space/connection/Havannah.lud,Havannah,2759,Havannah,7.19,188,1980,unverified
+lud/board/space/connection/Troll.lud,Troll,174893,TROLL,6.48,286,2015,unverified
+lud/board/space/group/Catchup.lud,Catchup,68199,Catchup,7.68,121,2010,unverified
+lud/board/race/fill/Camelot.lud,Camelot,5251,Camelot,6.71,275,1930,unverified
+lud/board/space/line/Gomoku.lud,Gomoku,11929,Go-Moku,5.99,595,700,unverified
+lud/board/war/replacement/eliminate/target/Ploy.lud,Ploy,1591,Ploy,6.21,367,1970,unverified
+lud/board/war/replacement/eliminate/target/Cannon.lud,Cannon,8553,Cannon,6.96,144,2003,unverified
+lud/experimental/OffShore.lud,OffShore,283867,Offshore,6.91,152,2019,unverified
+lud/board/space/line/Score Four.lud,Score Four,3656,Score Four,5.96,601,1967,unverified
+lud/board/war/direction/linear/Fanorona.lud,Fanorona,4386,Fanorona,6.41,219,1680,unverified
+lud/board/space/group/Abande.lud,Abande,21324,Abande,7.05,100,2005,unverified
+lud/board/race/reach/Murus Gallicus.lud,Murus Gallicus,55131,Murus Gallicus,7.69,68,2009,unverified
+lud/board/space/line/Connect6.lud,Connect6,22847,Connect6,6.60,157,2003,unverified
+lud/board/race/reach/Squadro.lud,Squadro,245222,Squadro,6.52,144,2018,unverified
+lud/board/race/escape/Senet.lud,Senet,2399,Senet,5.82,664,-3500,unverified
+lud/board/sow/four_rows/Bao.lud,Bao,14186,Bao,6.76,112,0,unverified
+lud/board/war/leaping/orthogonal/Leap Frog.lud,Leap Frog,13359,Leapfrog,6.23,183,2004,unverified
+lud/board/hunt/Coyote.lud,Coyote,317981,Coyote,6.98,86,2020,unverified
+lud/board/space/territory/Virus.lud,Virus,189351,Virus,6.40,265,2016,unverified
+lud/board/war/custodial/Tablut.lud,Tablut,6121,Tablut,6.32,180,1700,unverified
+lud/board/race/reach/Diaballik.lud,Diaballik,20253,Diaballik,6.49,127,2004,unverified
+lud/board/space/territory/Bug.lud,Bug,240835,Bug,7.45,46,2017,unverified
+lud/board/space/group/Taiji.lud,Taiji,31926,TAIJI,6.37,116,2007,unverified
+lud/board/war/replacement/eliminate/all/Triad.lud,Triad,251722,Triad,7.45,47,2018,unverified
+lud/board/race/reach/Jungle.lud,Jungle,4031,Jungle,5.96,301,0,unverified
+lud/reconstruction/done/board/war/leaping/lines/Riga.lud,Riga,220861,Riga,6.27,115,2017,unverified
+lud/board/space/connection/Unlur.lud,Unlur,3826,Unlur,7.85,35,2002,unverified
+lud/board/hunt/Baghchal.lud,Baghchal,315,Bagh Chal,5.91,215,1000,unverified
+lud/board/space/line/Ringo.lud,Ringo,261490,Ringo,7.17,43,2018,unverified
+lud/board/war/custodial/Breakthru.lud,Breakthru,335,Breakthru,5.81,333,1965,unverified
+lud/board/war/leaping/diagonal/Guerrilla Checkers.lud,Guerrilla Checkers,71035,Guerrilla Checkers,7.57,40,2010,unverified
+lud/board/war/replacement/checkmate/chess/Omega Chess.lud,Omega Chess,12040,Omega Chess,7.50,46,1992,unverified
+lud/board/race/reach/Breakthrough.lud,Breakthrough,3825,Breakthrough,6.53,74,2001,unverified
+lud/math/So Long Sucker.lud,So Long Sucker,8304,So Long Sucker,6.19,84,1964,unverified
+lud/board/war/replacement/checkmate/chaturanga/Mak Ruk.lud,Mak Ruk,5364,Makruk,6.79,48,0,unverified
+lud/board/space/territory/Rolit.lud,Rolit,8243,Rolit,5.68,480,1997,unverified
+lud/board/war/replacement/checkmate/shogi/Minishogi.lud,Minishogi,28389,Mini Shogi,7.07,36,1970,unverified
+lud/board/race/reach/Neutron.lud,Neutron,6978,Neutron,6.49,55,1978,unverified
+lud/board/space/territory/MacBeth.lud,MacBeth,257604,Macbeth,6.79,50,2018,unverified
+lud/board/space/group/Omega.lud,Omega,81588,OMEGA,7.08,39,2010,unverified
+lud/board/space/line/Pentalath.lud,Pentalath,51401,Pentalath,6.69,43,2009,unverified
+lud/board/race/score/Momentum.lud,Momentum,73091,Momentum,6.70,44,2010,unverified
+lud/board/race/reach/King's Valley.lud,King's Valley,86169,King's Valley,6.59,43,2006,unverified
+lud/board/space/group/Feed the Ducks.lud,Feed the Ducks,112532,Feed the ducks,7.11,37,2011,unverified
+lud/board/space/line/All Queens Chess.lud,All Queens Chess,34948,All Queens Chess,6.10,119,2008,unverified
+lud/board/space/line/Spree.lud,Spree,1832,Spree!,5.73,293,1997,unverified
+lud/board/war/replacement/checkmate/chess/Dragonchess.lud,Dragonchess,23724,Dragon Chess,7.18,31,2005,unverified
+lud/board/space/connection/Gonnect.lud,Gonnect,12146,Gonnect,6.95,35,2000,unverified
+lud/board/space/pattern/Quantik.lud,Quantik,286295,Quantik,5.90,127,2019,unverified
+lud/board/war/leaping/orthogonal/Konane.lud,Konane,8122,Konane,6.17,58,1775,unverified
+lud/board/war/replacement/eliminate/target/Shogun.lud,Shogun,2043,Shogun,5.69,514,1976,unverified
+lud/board/war/replacement/eliminate/all/Surakarta.lud,Surakarta,13715,Surakarta,5.98,106,0,unverified
+lud/board/space/pattern/Kensington.lud,Kensington,276459,Kensington,6.79,38,2019,unverified
+lud/board/space/blocking/Isolation.lud,Isolation,1875,Isolation,5.72,218,1972,unverified
+lud/board/race/fill/Barca.lud,Barca,69347,Barca,6.63,35,2007,unverified
+lud/board/race/fill/Salta.lud,Salta,18683,Salta,6.70,33,1899,unverified
+lud/board/war/replacement/checkmate/chess/Dragonchess.lud,Dragonchess,12776,Dragonchess,6.39,33,1985,unverified
+lud/board/war/leaping/diagonal/Shashki.lud,Shashki,57409,Shashki,6.57,30,1680,unverified
+lud/board/space/line/Ultimate Tic-Tac-Toe.lud,Ultimate Tic-Tac-Toe,42336,Ultimate Tic-Tac-Toe,6.06,70,2008,unverified
+lud/board/war/replacement/checkmate/chaturanga/Chaturanga.lud,Chaturanga,18011,Chaturanga,5.92,98,650,unverified
+lud/board/space/territory/Ataxx.lud,Ataxx,91313,Ataxx,6.07,48,1990,unverified
+lud/math/Mastermind.lud,Mastermind,2392,Mastermind,5.56,6130,1971,unverified
+lud/board/race/reach/Jungle.lud,Jungle,6983,Jungle,6.08,42,1981,unverified
+lud/board/space/blocking/Banqi.lud,Banqi,29741,Banqi,6.17,33,1970,unverified
+lud/board/hunt/Three Musketeers.lud,Three Musketeers,21861,Three Musketeers,5.95,36,1969,unverified
+lud/board/war/replacement/checkmate/chess/Quick Chess.lud,Quick Chess,10463,Quick Chess,6.05,30,1991,unverified
+lud/board/war/leaping/lines/Alquerque.lud,Alquerque,11464,Alquerque,5.72,99,1000,unverified
+lud/board/war/replacement/eliminate/all/Quad Wrangle.lud,Quad Wrangle,2730,Quadwrangle,5.85,40,1983,unverified
+lud/board/war/replacement/eliminate/target/L'attaque.lud,L'attaque,9246,L'Attaque,6.02,49,1909,unverified
+lud/board/space/connection/Atoll.lud,Atoll,34221,Atoll,5.71,135,2008,unverified
+lud/board/space/line/Twelve Men's Morris.lud,Twelve Men's Morris,29080,Twelve Men's Morris,5.78,61,0,unverified
+lud/board/hunt/Asalto.lud,Asalto,25988,Asalto,5.67,74,1803,unverified
+lud/board/war/replacement/eliminate/all/Puluc.lud,Puluc,13745,Puluc,5.95,31,0,unverified
+lud/board/space/line/Spline+.lud,Spline+,93164,Spline,5.76,34,2011,unverified
+lud/board/space/line/Spline.lud,Spline,93164,Spline,5.76,34,2011,unverified
+lud/board/war/custodial/Seega.lud,Seega,11347,Seega,5.73,39,0,unverified
+lud/board/space/pattern/Azteka.lud,Azteka,153496,Azteka,5.65,40,2014,unverified
+lud/board/space/line/Neutreeko.lud,Neutreeko,3319,Neutreeko,5.49,96,2001,unverified
+lud/board/war/replacement/checkmate/shogi/Hasami Shogi.lud,Hasami Shogi,13716,Hasami Shogi,5.59,44,0,unverified
+lud/board/space/territory/Lotus.lud,Lotus,2348,Lotus,5.39,210,1998,unverified
+lud/board/space/connection/Chameleon.lud,Chameleon,17576,Chameleon,4.78,34,2005,unverified
+lud/board/race/reach/Archimedes.lud,Archimedes,1638,Archimedes,4.83,42,1981,unverified
+lud/board/space/line/3D Tic-Tac-Toe.lud,3D Tic-Tac-Toe,67364,3D Tic Tac Toe,4.81,38,0,unverified
+lud/puzzle/planning/Spuzzle.lud,Spuzzle,120579,Spuzzle,4.84,47,2010,unverified
+lud/board/race/fill/Camelot.lud,Camelot,14812,Camelot,5.29,132,2005,unverified
+lud/board/race/fill/Halma.lud,Halma,38950,Halma,5.37,229,1884,unverified
+lud/board/space/blocking/L Game.lud,L Game,6474,L-Game,5.00,116,1968,unverified
+lud/board/space/pattern/Kensington.lud,Kensington,2197,Kensington,5.35,440,1979,unverified
+lud/board/space/line/Three Men's Morris.lud,Three Men's Morris,19915,Three Men's Morris,4.31,60,-1400,unverified
+lud/puzzle/deduction/Sudoku.lud,Sudoku,20801,Sudoku,4.98,134,2005,unverified
+lud/math/hand/Rock-Paper-Scissors.lud,Rock-Paper-Scissors,11863,Rock Paper Scissors,3.96,61,1968,unverified
+lud/math/nim/Nim.lud,Nim,11753,Nim,4.01,64,0,unverified
+lud/board/space/line/3D Tic-Tac-Toe.lud,3D Tic-Tac-Toe,16387,3D Tic Tac Toe,4.22,106,1953,unverified
+lud/board/space/line/Nine Men's Morris.lud,Nine Men's Morris,3886,Nine Men's Morris,5.36,1310,-1400,unverified
+lud/board/war/replacement/eliminate/all/Battleships.lud,Battleships,27190,Battleships,4.60,169,1931,unverified
+lud/board/hunt/Fox and Geese.lud,Fox and Geese,10213,Fox and Geese,4.72,260,1400,unverified
+lud/math/nim/Chomp.lud,Chomp,5367,Chomp!,4.71,310,2000,unverified
+lud/board/race/fill/Chinese Checkers.lud,Chinese Checkers,2386,Chinese Checkers,5.12,4157,1893,unverified
+lud/board/space/line/Connect Four.lud,Connect Four,2719,Connect Four,4.87,6928,1974,unverified
+lud/board/race/escape/Pachisi.lud,Pachisi,2136,Pachisi,4.49,4476,400,unverified
+lud/board/space/line/Tic-Tac-Toe.lud,Tic-Tac-Toe,11901,Tic-Tac-Toe,2.68,3275,-1300,unverified
