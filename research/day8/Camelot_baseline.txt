@@ -1,0 +1,10 @@
+game=Camelot
+trials=20 seed=20261115
+max_moves_per_trial=1000
+finished=20 capped=0
+mean_moves=290.65
+mean_legal_moves=41.36848443144676
+DecisionMoves=0.9193914146067792
+Completion=1.0
+DurationTurns=272.9
+Balance=0.6000000000000001

@@ -1,0 +1,10 @@
+game=Santorini
+trials=20 seed=20261115
+max_moves_per_trial=1000
+finished=20 capped=0
+mean_moves=82.7
+mean_legal_moves=7.389963724304716
+DecisionMoves=0.9921179235144638
+Completion=1.0
+DurationTurns=41.85
+Balance=0.8

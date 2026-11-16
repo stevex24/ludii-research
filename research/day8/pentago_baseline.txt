@@ -1,0 +1,10 @@
+game=Pentago
+trials=20 seed=20261115
+max_moves_per_trial=1000
+finished=20 capped=0
+mean_moves=56.4
+mean_legal_moves=15.009751773049645
+DecisionMoves=0.9979729729729729
+Completion=0.95
+DurationTurns=28.45
+Balance=0.95

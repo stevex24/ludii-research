@@ -1,0 +1,10 @@
+game=Quarto
+trials=20 seed=20261115
+max_moves_per_trial=1000
+finished=20 capped=0
+mean_moves=23.1
+mean_legal_moves=10.562770562770563
+DecisionMoves=1.0
+Completion=1.0
+DurationTurns=12.55
+Balance=0.8999999999999999

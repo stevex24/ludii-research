@@ -1,0 +1,10 @@
+game=Yavalath
+trials=20 seed=20261115
+max_moves_per_trial=1000
+finished=20 capped=0
+mean_moves=21.1
+mean_legal_moves=50.68009478672986
+DecisionMoves=1.0
+Completion=1.0
+DurationTurns=20.95
+Balance=1.0

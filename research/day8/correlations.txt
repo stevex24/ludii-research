@@ -1,0 +1,5 @@
+Day 8 exploratory correlations (n=5)
+branching: Pearson r = -0.0501
+length: Pearson r = -0.2043
+balance: Pearson r = -0.0038
+Exploratory only: five provisional Level B matches, random-play features, historical aggregate ratings.
