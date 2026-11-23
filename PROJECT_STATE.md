@@ -44,3 +44,11 @@ Stage only intended project files.
 
 ## Day 8 completion
 Five Level B games measured successfully using run_day8.sh (20 trials each, seed 20261115). Results in research/day8/*_baseline.txt and features_and_ratings.csv. Pearson r: branching -0.0501, length -0.2043, balance -0.0038 (n=5). See research/day8/DAY8_REPORT.md. Next: expand verified sample and test measurement stability. Reproduce with ./run_day8.sh followed by python3 research/day8/analyze.py.
+
+
+## New research plan — Day 2 completed
+Exact 3x3 NoGo dataset: 3,884 states.
+Training: 3,110; testing: 774.
+All validation checks passed.
+Report: go/nogo/DAY2_REPORT.md.
+Next: Day 3 — static evaluation function.
