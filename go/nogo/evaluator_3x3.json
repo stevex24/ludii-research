@@ -1,0 +1,30 @@
+{
+  "training_board_size": 3,
+  "features": [
+    "intercept",
+    "own_mobility",
+    "opponent_mobility",
+    "own_exclusive",
+    "opponent_exclusive",
+    "shared_moves",
+    "empty_fraction",
+    "stone_advantage",
+    "liberty_advantage",
+    "constrained_advantage"
+  ],
+  "weights": [
+    0.8105222276854605,
+    6.431433180064832,
+    -3.4585076269498765,
+    7.154158773794293,
+    -2.7357820332204232,
+    -0.7227255937294584,
+    -0.9819960085359316,
+    12.444604445634656,
+    6.080616060070829,
+    0.5442435242881335
+  ],
+  "epochs": 2000,
+  "learning_rate": 1.0,
+  "regularization": 0.0001
+}

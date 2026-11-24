@@ -52,3 +52,13 @@ Training: 3,110; testing: 774.
 All validation checks passed.
 Report: go/nogo/DAY2_REPORT.md.
 Next: Day 3 — static evaluation function.
+
+
+## New research plan - Day 3 completed
+First learned static evaluator implemented.
+Training accuracy: 77.88%.
+Held-out accuracy: 65.63%.
+Mobility baseline: 67.70%.
+Depth-3 decision quality: learned 98.43%, mobility 96.26%.
+Report: go/nogo/DAY3_REPORT.md.
+Next: Day 4 - larger-board transfer and improvements.
