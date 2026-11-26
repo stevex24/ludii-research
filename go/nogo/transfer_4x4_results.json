@@ -1,0 +1,60 @@
+{
+  "positions": 2000,
+  "correct": {
+    "Majority": 1236,
+    "Mobility": 1350,
+    "Learned 3x3": 1348
+  },
+  "by_ply": {
+    "11": {
+      "total": 213,
+      "Mobility": 155,
+      "Learned 3x3": 157
+    },
+    "12": {
+      "total": 212,
+      "Mobility": 142,
+      "Learned 3x3": 114
+    },
+    "8": {
+      "total": 244,
+      "Mobility": 184,
+      "Learned 3x3": 177
+    },
+    "10": {
+      "total": 221,
+      "Mobility": 156,
+      "Learned 3x3": 156
+    },
+    "7": {
+      "total": 234,
+      "Mobility": 171,
+      "Learned 3x3": 172
+    },
+    "14": {
+      "total": 165,
+      "Mobility": 29,
+      "Learned 3x3": 18
+    },
+    "13": {
+      "total": 213,
+      "Mobility": 158,
+      "Learned 3x3": 172
+    },
+    "6": {
+      "total": 226,
+      "Mobility": 171,
+      "Learned 3x3": 178
+    },
+    "9": {
+      "total": 250,
+      "Mobility": 184,
+      "Learned 3x3": 185
+    },
+    "15": {
+      "total": 22,
+      "Mobility": 0,
+      "Learned 3x3": 19
+    }
+  }
+}

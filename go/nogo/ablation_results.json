@@ -1,0 +1,65 @@
+{
+  "A": {
+    "excluded": [],
+    "features": [
+      "own_mobility",
+      "opponent_mobility",
+      "own_exclusive",
+      "opponent_exclusive",
+      "shared_moves",
+      "empty_fraction",
+      "stone_advantage",
+      "liberty_advantage",
+      "constrained_advantage"
+    ],
+    "cv_accuracy": 78.13504823151125
+  },
+  "B": {
+    "excluded": [
+      "stone_advantage"
+    ],
+    "features": [
+      "own_mobility",
+      "opponent_mobility",
+      "own_exclusive",
+      "opponent_exclusive",
+      "shared_moves",
+      "empty_fraction",
+      "liberty_advantage",
+      "constrained_advantage"
+    ],
+    "cv_accuracy": 75.11254019292605
+  },
+  "C": {
+    "excluded": [
+      "stone_advantage",
+      "empty_fraction"
+    ],
+    "features": [
+      "own_mobility",
+      "opponent_mobility",
+      "own_exclusive",
+      "opponent_exclusive",
+      "shared_moves",
+      "liberty_advantage",
+      "constrained_advantage"
+    ],
+    "cv_accuracy": 74.21221864951768
+  },
+  "D": {
+    "excluded": [
+      "stone_advantage",
+      "empty_fraction",
+      "own_mobility",
+      "opponent_mobility"
+    ],
+    "features": [
+      "own_exclusive",
+      "opponent_exclusive",
+      "shared_moves",
+      "liberty_advantage",
+      "constrained_advantage"
+    ],
+    "cv_accuracy": 74.72668810289389
+  }
+}

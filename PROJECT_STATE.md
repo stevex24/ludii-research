@@ -62,3 +62,15 @@ Mobility baseline: 67.70%.
 Depth-3 decision quality: learned 98.43%, mobility 96.26%.
 Report: go/nogo/DAY3_REPORT.md.
 Next: Day 4 - larger-board transfer and improvements.
+
+## Day 4 — Complete (November 25, 2026)
+
+- Completed four-model feature ablation.
+- All four models achieved 99.00% depth-3 decision quality.
+- Generated 2000 exactly solved 4x4 positions.
+- Measured zero-shot transfer accuracy of 67.40%.
+- Implemented time-limited iterative deepening.
+- Validated all 3884 reachable 3x3 positions.
+- Completed 90 timed search benchmarks.
+- Identified BobNoGo as an external benchmark candidate.
+- See go/nogo/DAY4_REPORT.md.
