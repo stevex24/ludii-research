@@ -1,0 +1,13 @@
+size,agent_a,agent_b,wins_a,wins_b,win_rate_a,relative_elo_a
+4,mobility,learned_3x3,13,7,0.65,107.53812491703201
+4,mobility,learned_4x4_A,11,9,0.55,34.86007028756011
+4,mobility,learned_4x4_D,11,9,0.55,34.86007028756011
+4,learned_3x3,learned_4x4_A,9,11,0.45,-34.86007028756008
+4,learned_3x3,learned_4x4_D,9,11,0.45,-34.86007028756008
+4,learned_4x4_A,learned_4x4_D,10,10,0.5,0.0
+5,mobility,learned_3x3,9,11,0.45,-34.86007028756008
+5,mobility,learned_4x4_A,10,10,0.5,0.0
+5,mobility,learned_4x4_D,11,9,0.55,34.86007028756011
+5,learned_3x3,learned_4x4_A,10,10,0.5,0.0
+5,learned_3x3,learned_4x4_D,10,10,0.5,0.0
+5,learned_4x4_A,learned_4x4_D,13,7,0.65,107.53812491703201

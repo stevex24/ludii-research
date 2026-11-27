@@ -74,3 +74,17 @@ Next: Day 4 - larger-board transfer and improvements.
 - Completed 90 timed search benchmarks.
 - Identified BobNoGo as an external benchmark candidate.
 - See go/nogo/DAY4_REPORT.md.
+
+## Day 5 — November 26, 2026 — COMPLETE
+
+- Trained nine-feature and five-feature 4x4 models.
+- Held-out accuracy: 75.88% and 75.63%.
+- Optimized feature extraction: up to 24.40x.
+- Validated 7310 feature-extraction positions.
+- Implemented depth-aware transposition tables.
+- Passed 31072 search validation tests.
+- Completed 90 controlled search benchmarks.
+- Completed 240 competitive games.
+- Mobility led 4x4; Model A led 5x5 overall.
+- Relative Elo remains internally calibrated only.
+- Full results: go/nogo/DAY5_REPORT.md

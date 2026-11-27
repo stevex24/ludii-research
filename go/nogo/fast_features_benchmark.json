@@ -1,0 +1,122 @@
+[
+  {
+    "board_size": 3,
+    "positions": 82,
+    "original": {
+      "evaluations": 820,
+      "seconds": 0.023580540999999997,
+      "per_second": 34774.43541265657,
+      "microseconds": 28.756757317073166
+    },
+    "fast_A": {
+      "evaluations": 820,
+      "seconds": 0.0061435840000000005,
+      "per_second": 133472.5788725278,
+      "microseconds": 7.4921756097560985
+    },
+    "fast_D": {
+      "evaluations": 820,
+      "seconds": 0.005679707999999999,
+      "per_second": 144373.61920718462,
+      "microseconds": 6.926473170731706
+    },
+    "speedup_A": 3.8382385591211894,
+    "speedup_D": 4.151717130528541
+  },
+  {
+    "board_size": 4,
+    "positions": 149,
+    "original": {
+      "evaluations": 1490,
+      "seconds": 0.082312542,
+      "per_second": 18101.737156896455,
+      "microseconds": 55.24331677852349
+    },
+    "fast_A": {
+      "evaluations": 1490,
+      "seconds": 0.015086875,
+      "per_second": 98761.34056920337,
+      "microseconds": 10.125419463087248
+    },
+    "fast_D": {
+      "evaluations": 1490,
+      "seconds": 0.014443291999999996,
+      "per_second": 103162.07690047396,
+      "microseconds": 9.693484563758387
+    },
+    "speedup_A": 5.455904022536145,
+    "speedup_D": 5.699015293743283
+  },
+  {
+    "board_size": 5,
+    "positions": 227,
+    "original": {
+      "evaluations": 2270,
+      "seconds": 0.26350229199999997,
+      "per_second": 8614.725825610656,
+      "microseconds": 116.08030484581496
+    },
+    "fast_A": {
+      "evaluations": 2270,
+      "seconds": 0.03306308300000005,
+      "per_second": 68656.63434955526,
+      "microseconds": 14.565234801762136
+    },
+    "fast_D": {
+      "evaluations": 2270,
+      "seconds": 0.03183720900000003,
+      "per_second": 71300.21981512255,
+      "microseconds": 14.025202202643186
+    },
+    "speedup_A": 7.969683044984025,
+    "speedup_D": 8.276551251713043
+  },
+  {
+    "board_size": 7,
+    "positions": 460,
+    "original": {
+      "evaluations": 4600,
+      "seconds": 1.7843101670000001,
+      "per_second": 2578.027119429623,
+      "microseconds": 387.8935145652174
+    },
+    "fast_A": {
+      "evaluations": 4600,
+      "seconds": 0.12214216600000016,
+      "per_second": 37661.03181762794,
+      "microseconds": 26.55264478260873
+    },
+    "fast_D": {
+      "evaluations": 4600,
+      "seconds": 0.11894066699999994,
+      "per_second": 38674.745282872864,
+      "microseconds": 25.85666673913042
+    },
+    "speedup_A": 14.60846999389218,
+    "speedup_D": 15.00168287268812
+  },
+  {
+    "board_size": 9,
+    "positions": 751,
+    "original": {
+      "evaluations": 7510,
+      "seconds": 7.770232291999999,
+      "per_second": 966.5090717728057,
+      "microseconds": 1034.6514370173102
+    },
+    "fast_A": {
+      "evaluations": 7510,
+      "seconds": 0.33221962500000046,
+      "per_second": 22605.527894386098,
+      "microseconds": 44.236967376830954
+    },
+    "fast_D": {
+      "evaluations": 7510,
+      "seconds": 0.31849787500000026,
+      "per_second": 23579.435184614635,
+      "microseconds": 42.4098368841545
+    },
+    "speedup_A": 23.388841920461466,
+    "speedup_D": 24.396496497818056
+  }
+]

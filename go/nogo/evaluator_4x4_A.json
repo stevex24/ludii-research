@@ -1,0 +1,42 @@
+{
+  "board_size": 4,
+  "model": "A",
+  "feature_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "feature_names": [
+    "own_mobility",
+    "opponent_mobility",
+    "own_exclusive",
+    "opponent_exclusive",
+    "shared_moves",
+    "empty_fraction",
+    "stone_advantage",
+    "liberty_advantage",
+    "constrained_advantage"
+  ],
+  "weights": [
+    -0.799174272525913,
+    7.161527886847516,
+    -4.005944237974652,
+    7.015662878208268,
+    -4.151809246613902,
+    0.14586500863925417,
+    0.5652513798485441,
+    -1.392896723735586,
+    4.6244303495004715,
+    -1.4720470449676237
+  ],
+  "training_positions": 1602,
+  "test_positions": 398,
+  "training_accuracy": 0.7553058676654182,
+  "test_accuracy": 0.7587939698492462
+}
