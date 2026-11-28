@@ -1,0 +1,30 @@
+{
+  "board_size": 5,
+  "model": "D",
+  "feature_indices": [
+    2,
+    3,
+    4,
+    7,
+    8
+  ],
+  "feature_names": [
+    "own_exclusive",
+    "opponent_exclusive",
+    "shared_moves",
+    "liberty_advantage",
+    "constrained_advantage"
+  ],
+  "weights": [
+    -0.24726398803540622,
+    8.978855264332791,
+    -5.191239829169994,
+    3.1341112641558158,
+    1.6255895357700452,
+    -3.489866388296579
+  ],
+  "training_positions": 4000,
+  "test_positions": 1000,
+  "training_accuracy": 0.72,
+  "test_accuracy": 0.713
+}

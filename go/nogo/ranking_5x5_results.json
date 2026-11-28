@@ -1,0 +1,34 @@
+{
+  "random": {
+    "pair_accuracy": 0.5,
+    "move_accuracy": 0.4458759502784661
+  },
+  "mobility": {
+    "pair_accuracy": 0.7446269261962692,
+    "move_accuracy": 0.7410168622432776
+  },
+  "evaluator_3x3": {
+    "pair_accuracy": 0.758617193836172,
+    "move_accuracy": 0.7636268343815513
+  },
+  "evaluator_4x4_A": {
+    "pair_accuracy": 0.7636861313868614,
+    "move_accuracy": 0.7686932215234102
+  },
+  "evaluator_4x4_D": {
+    "pair_accuracy": 0.7707826439578265,
+    "move_accuracy": 0.7739343116701608
+  },
+  "evaluator_5x5_A": {
+    "pair_accuracy": 0.7634833738848338,
+    "move_accuracy": 0.7686932215234102
+  },
+  "evaluator_5x5_D": {
+    "pair_accuracy": 0.7638888888888888,
+    "move_accuracy": 0.7603074772886094
+  },
+  "evaluator_5x5_ranking": {
+    "pair_accuracy": 0.7646999188969992,
+    "move_accuracy": 0.7634521313766597
+  }
+}

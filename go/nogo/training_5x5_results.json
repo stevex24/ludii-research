@@ -1,0 +1,9 @@
+{
+  "majority": 0.629,
+  "mobility": 0.714,
+  "evaluator_3x3": 0.649,
+  "evaluator_4x4_A": 0.727,
+  "evaluator_4x4_D": 0.711,
+  "evaluator_5x5_A": 0.745,
+  "evaluator_5x5_D": 0.713
+}

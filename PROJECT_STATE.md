@@ -88,3 +88,14 @@ Next: Day 4 - larger-board transfer and improvements.
 - Mobility led 4x4; Model A led 5x5 overall.
 - Relative Elo remains internally calibrated only.
 - Full results: go/nogo/DAY5_REPORT.md
+
+## Day 6 completed
+
+- Exactly solved 5,000 sampled 5x5 positions.
+- Nine-feature model achieved 74.50% test accuracy.
+- Investigated pairwise move-ranking training.
+- Completed 840 competitive games.
+- Both 5x5 models topped the 7x7 standings.
+- Reduced model defeated mobility 15-5 on 7x7.
+- BobNoGo installation investigated and deferred.
+- See go/nogo/DAY6_REPORT.md.

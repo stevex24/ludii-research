@@ -1,0 +1,46 @@
+{
+  "board_size": 5,
+  "model": "Ranking",
+  "feature_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "feature_names": [
+    "own_mobility",
+    "opponent_mobility",
+    "own_exclusive",
+    "opponent_exclusive",
+    "shared_moves",
+    "empty_fraction",
+    "stone_advantage",
+    "liberty_advantage",
+    "constrained_advantage"
+  ],
+  "weights": [
+    0.0,
+    4.25050142409851,
+    -0.9825372303736558,
+    1.4185481552598491,
+    -3.8144904992123134,
+    2.8319532688386597,
+    0.0,
+    0.0,
+    0.18586339383689357,
+    -2.2872746299811375
+  ],
+  "objective": "pairwise_ranking",
+  "training_positions": 1884,
+  "test_positions": 477,
+  "training_pairs": 19909,
+  "test_pairs": 4932,
+  "training_pair_accuracy": 0.7661108041589231,
+  "test_pair_accuracy": 0.7646999188969992,
+  "test_move_accuracy": 0.7634521313766597
+}
